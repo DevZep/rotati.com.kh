@@ -24,6 +24,22 @@ sudo mv index.html /var/www/rotati.com.kh/.
 
 Configuration for Nginx is in `/etc/nginx/sites-available` folder.
 
+## SSL Cert using LetsEncrypt
+
+The sites have SSL certificates using LetsEncrypt. Check [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04) for details. 
+
+To register and install a new SSL cert run the following:
+
+```
+sudo certbot --nginx -d rotati.com.kh -d www.rotati.com.kh
+```
+
+The certbot is configured to renew every 30 days. Check the settings using:
+
+```
+sudo systemctl status certbot.timer
+```
+
 ## Restart Nginx
 
 You may sometimes need to restart Nginx. To do so, ssh into the server and then run:
