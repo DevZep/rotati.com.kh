@@ -17,8 +17,12 @@ scp index.html developer@sobot:~
 Now ssh into the server and run the following:
 
 ```
-sudo mv index.html /var/www/html/.
+sudo mv index.html /var/www/rotati.com.kh/.
 ```
+
+## Config Nginx 
+
+Configuration for Nginx is in `/etc/nginx/sites-available` folder.
 
 ## Restart Nginx
 
