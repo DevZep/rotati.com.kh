@@ -47,3 +47,7 @@ You may sometimes need to restart Nginx. To do so, ssh into the server and then 
 ```
 sudo service nginx restart
 ```
+
+## Live Site
+
+If everything is working then the site should be securly available via `https` at this location: https://rotati.com.kh and at https://www.rotati.com.kh
